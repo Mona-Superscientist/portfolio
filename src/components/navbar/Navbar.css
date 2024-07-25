@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 99999;
+    position: sticky;
+    top:0;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar.light {
+    background-color: #ffffff;
+    color: grey;
+}
+
+.navbar.dark {
+    background-color: #003049;
+    color: #fff;
+}
+
+.navbar-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    align-items: right;
+}
+
+.menu-item li {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.menu-item span {
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    color: #009FBD;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: larger;
+}

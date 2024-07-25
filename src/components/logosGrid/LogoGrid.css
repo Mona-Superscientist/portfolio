@@ -1,0 +1,55 @@
+.logos-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.logos-section.light{
+    background-color: #f4f3ee;
+}
+
+.logos-section.dark {
+    background-color: #00131d;
+    opacity: 0.9;
+}
+
+.logos-section-header{
+    display: flex;
+    text-align: left;
+    padding-top:50px;
+    padding-left: 40px;
+}
+
+.logos-section-header h2{
+    font-family: Axiforma, sans-serif;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.nerd-emoji{
+    padding-top: 23px;
+    padding-left: 10px;
+}
+
+.logos-images{
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 30%;
+    margin: 20px;
+    padding: 50px 60px;
+    gap:30px;
+    flex-wrap: wrap;
+}
+
+.logos-images img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logos-images img:hover {
+    transform: scale(1.2);
+}

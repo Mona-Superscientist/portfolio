@@ -1,0 +1,101 @@
+.certification-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+    width: 100%;
+    height: 450px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.certification-card.light {
+    background-color: white;
+}
+
+.certification-card.dark {
+    background-color: #0e1017;
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+}
+
+.certification-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.cert-provider {
+    font-weight: bold;
+    text-align: center;
+}
+
+.cert-date {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.certification-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cert-logo-container {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.certification-card img {
+    width: 140px !important;
+    height: auto;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.certification-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.certification-tag {
+    background-color: #7209b7;
+    color: whitesmoke;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.certification-tag:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .certification-card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    .certification-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .certification-card {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,36 @@
+.service-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 0 20%;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.service-card.light {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px #f4f3ee;
+}
+
+.service-card.dark {
+    background-color: #000a0f;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px #333;
+}
+
+.service-card:hover {
+    box-shadow: 0 4px 8px;
+    transform: translateY(-5px);
+}
+
+.service-name {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.service-logo-container {
+    font-size: 30px;
+    color: #009FBD
+}

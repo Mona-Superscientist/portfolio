@@ -1,0 +1,111 @@
+.services {
+    padding: 50px 30px;
+    border-radius: 25px;
+}
+
+.services.light {
+    background-color: #f4f3ee;
+}
+
+.services.dark {
+    background-color: #00131d;
+}
+
+.services-heading h2 {
+    text-align: center;
+}
+
+.services-heading p {
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-buttons  {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap:30px
+}
+
+.service-buttons.dark .contact-btn {
+    background-color: white;
+    color: black;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+}
+
+.service-buttons.dark .contact-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.service-buttons.light .contact-btn {
+    background-color: black;
+    color: white;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+}
+
+.service-buttons.light .contact-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.more-services-btn {
+    background-color:#009FBD;
+    color: white;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+
+.more-services-btn:hover {
+    background-color: white;
+    color: #009FBD;
+}
+
+.email-gif-placeholder{
+    width: 400px;
+    height: max-content;
+}
+
+.contact-us-gif {
+    width: 300px;
+    height: auto;
+    padding-bottom: 80px;
+}
+
+.contact-us-fields{
+    width: 400px;
+}

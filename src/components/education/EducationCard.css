@@ -1,0 +1,28 @@
+.education-card {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+    padding-top: 20px;
+}
+
+.education-item-content {
+   padding-left: 30px;
+}
+
+.education-item-content h1 {
+    font-size: 1.5rem;
+}
+
+.education-item-content h2 {
+    font-size: 1.2rem;
+    font-weight: normal
+}
+
+.education-degree {
+    font-weight: bold !important;
+}
+
+.education-logo {
+    width: 100px;
+    height: auto;
+}

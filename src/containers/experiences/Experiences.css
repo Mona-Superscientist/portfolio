@@ -1,0 +1,46 @@
+.experiences {
+    padding: 50px 20px;
+}
+
+.experiences h1 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.experience-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.experience-card {
+    flex: 1 0 30%;
+    margin: 10px;
+}
+
+.experiences-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.show-all-button {
+    background-color: #009FBD;
+    color: white;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.show-all-button:hover {
+    background-color: white;
+    color: #009FBD;
+}

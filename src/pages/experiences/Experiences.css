@@ -1,0 +1,12 @@
+.experience-page h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.experience-page.light .experience-page-title{
+    color: #003049;
+}
+
+.experience-page.dark .experience-page-title {
+    columns: white;
+}

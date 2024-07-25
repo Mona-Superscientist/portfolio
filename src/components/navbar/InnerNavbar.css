@@ -1,0 +1,54 @@
+.inner-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 99999;
+    position: sticky;
+    top: 0;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.inner-navbar.light {
+    background-color: #ffffff;
+    color: grey;
+}
+
+.inner-navbar.dark {
+    background-color: #003049;
+    color: #fff;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: larger;
+}
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    align-items: right;
+}
+
+.breadcrumb-item.light{
+    color: grey;
+    cursor: pointer;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.breadcrumb-item.dark {
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.breadcrumb-item:hover {
+    color: #009FBD;
+}
