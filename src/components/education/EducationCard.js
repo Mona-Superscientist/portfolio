@@ -10,7 +10,7 @@ const EducationCard = ({logo, university, degree, duration}) => {
     return(
         <section className={`education-card ${theme}`}>
             <div className="education-logo-placeholder">
-                <img className="education-logo" src={process.env.PUBLIC_URL + logo} alt={`${university} img`} />
+                <img className="education-logo" src={logo} alt={`${university} img`} />
             </div>
             <div className="education-item-content">
                 <h1> {university} </h1>

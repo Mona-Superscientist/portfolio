@@ -14,7 +14,7 @@ const DetailedServiceCard = ({ logo, name, intro, keyPoints }) => {
             <div className="detailed-service-header">
                 <h3 className="detailed-service-name">{name}</h3>
                 <div className='detailed-service-logo-container'>
-                    <img className="detailed-service-logo" src={process.env.PUBLIC_URL + logo} alt={name}  />
+                    <img className="detailed-service-logo" src={logo} alt={name}  />
                 </div>
             </div>
             <div className={`detailed-service-intro ${theme}`}>

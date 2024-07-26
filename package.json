@@ -2,8 +2,7 @@
   "name": "portfolio",
   "homepage": "https://mona-superscientist.github.io/portfolio",
   "version": "0.1.0",
-  "private": true,
-  "main": "index.html",
+  "private": false,
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

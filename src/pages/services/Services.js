@@ -36,7 +36,7 @@ const AllServices = ()  => {
                     </p>
                 </div>
                 <div className="mentorship-right-column">
-                    <img src={process.env.PUBLIC_URL + servicesIcons.adplist} alt="Adp List Logo" className="adp-list-logo" />
+                    <img src={servicesIcons.adplist} alt="Adp List Logo" className="adp-list-logo" />
                 </div>
             </div>
             <div className="upwork-section">

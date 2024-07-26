@@ -61,7 +61,7 @@ const AllServices = () => {
 const App = () => {
     return (
         <ThemeProvider>
-            <Router>
+            <Router basename='/portfolio'>
                 <Routes>
                     {/* Route for all containers */}
                     <Route path="/" element={<HomeContent />} />

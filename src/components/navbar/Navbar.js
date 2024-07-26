@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <nav className={`navbar ${theme}`}>
             <div className="logo">
-                <img className='navbar-logo' src={process.env.PUBLIC_URL + logo} alt="logo" />
+                <img className='navbar-logo' src={logo} alt="logo" />
             </div>
             <ul className="nav-links">
                 <li className={`menu-item ${theme}`}>

@@ -53,7 +53,7 @@ const Services = () => {
             {isFeedbackModalOpen && (
                 <Modal onClose={closeFeedbackModal} title="Get in touch" component="contact-us">
                     <div className="email-gif-placeholder">
-                        <img className="contact-us-gif" src={process.env.PUBLIC_URL + email} alt="email-gif"/>
+                        <img className="contact-us-gif" src={email} alt="email-gif"/>
                     </div>
                     <div className="contact-us-fields">
                         <ContactForm onSubmit={handleSubmit} onCancel={closeFeedbackModal} />

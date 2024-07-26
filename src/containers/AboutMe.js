@@ -22,7 +22,7 @@ const AboutMeContainer = () => {
                     socialMedia={aboutMeData.socialMedia}
                 />
             <div className="about-me-gif">
-                <img src={process.env.PUBLIC_URL + abt} alt="GIF" />
+                <img src={abt} alt="GIF" />
             </div>
         </div>
     );

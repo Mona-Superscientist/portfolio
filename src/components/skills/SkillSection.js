@@ -43,7 +43,7 @@ const SkillSection = ({ title, skills = [] }) => {
                 {skills.slice(0, numSkillsToShow).map((skill, index) => (
                     <div className='skill-item' key={index}>
                         <div className='logo-placeholder'>
-                            <img src={process.env.PUBLIC_URL + skill.logo} alt={skill.name} className="skill-logo" />
+                            <img src={skill.logo} alt={skill.name} className="skill-logo" />
                         </div>
                         <p className='skill-name'>{skill.name}</p>
                     </div>
@@ -58,7 +58,7 @@ const SkillSection = ({ title, skills = [] }) => {
                                 {skills.map((skill, index) => (
                                     <div key={index} className="modal-skill">
                                         <div className='modal-skill-logo-placeholder'>
-                                            <img src={process.env.PUBLIC_URL + skill.logo} alt={skill.name} className="modal-skill-logo" />
+                                            <img src={skill.logo} alt={skill.name} className="modal-skill-logo" />
                                         </div>
                                         <p className='modal-skill-name'>{skill.name}</p>
                                     </div>

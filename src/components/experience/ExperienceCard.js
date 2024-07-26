@@ -9,7 +9,7 @@ const ExperienceCard = ({ company, title, duration, description, logo }) => {
     return (
         <div className={`experience-card ${theme}`}>
             <div className="experience-header" style={{ background: logo.color }}>
-                <img src={process.env.PUBLIC_URL + logo.src} alt={company} className="company-logo" />
+                <img src={logo.src} alt={company} className="company-logo" />
                 <h2 className='company-name'>{company}</h2>
             </div>
             <div className="experience-body">
