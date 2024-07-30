@@ -1,10 +1,10 @@
 .service-card {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 2vh 2vw;
     border-radius: 5px;
     flex: 1 0 20%;
-    margin: 20px;
+    margin: 2vh;
     overflow: hidden;
 }
 
@@ -33,4 +33,15 @@
 .service-logo-container {
     font-size: 30px;
     color: #009FBD
+}
+
+
+@media screen and (max-width: 600px) {
+    .service-card {
+        display: flex;
+        flex-direction: column;
+        padding: 2vh 4vw;
+        flex: 1 0 80%;
+        margin: 1vh;
+    }
 }

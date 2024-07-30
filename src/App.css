@@ -2,19 +2,21 @@
 .app-container.dark {
   background-color: #000a0f;
   color: #fff;
+  width: 100%
 }
 
 .app-container.light {
   background-color: #f8f8fa;
   color: #000;
+  width: 100%
 }
 
 .main-content {
-  padding: 0 130px;
+  padding: 0 10vw;
 }
 
 @media (max-width: 768px) {
-  .app-container {
-    padding: 0 20px;
+  .main-content {
+    padding: 0 5vw ;
   }
 }

@@ -28,7 +28,7 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    gap: 20px;
+    gap: 1.5vw;
     margin: 0.5rem;
 }
 
@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5px;
+    padding: 0.2vw;
     width:max-content
 }
 
@@ -47,12 +47,12 @@
 }
 
 .logo-placeholder {
-    width: 90px;
-    height: 90px;
+    width: 5vw;
+    height: 5vw;
 }
 
 .skill-logo {
-    width: 70px;
+    width: 4vw;
     height: auto;
     border-radius: 10%;
     margin-bottom: 1rem;
@@ -99,4 +99,43 @@
     height: auto;
     border-radius: 10%;
     margin-bottom: rem;
+}
+
+@media screen and (max-width: 600px) {
+    .skill-section-body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 0.1vw;
+        margin: 0.5rem;
+        flex: 1 0 40%;
+    }
+
+    .skill-item {
+        display: flex;
+        flex-direction: column;
+        padding: 4vw;
+        width: max-content
+    }
+
+    .logo-placeholder {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .skill-logo {
+        width: 13vw;
+        height: auto;
+        border-radius: 10%;
+        margin-bottom: 1rem;
+    }
+
+    .skill-name {
+        text-align: center;
+        font-size: small;
+        font-weight: bold;
+        margin-top: 0.5rem;
+    }
 }

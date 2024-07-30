@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState} from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Carousel.css';
@@ -7,6 +7,43 @@ import { useTheme } from '../../../context/ThemeContext';
 
 const CustomCarousel = ({ items }) => {
     const { theme } = useTheme();
+    const [carouselSettings, setCarouselSettings] = useState({
+        numItemsToShow: 1,
+        centerSlidePercentage: 30
+    });
+
+    useEffect(() => {
+        const handleResize = () => {
+            let numItemsToShow = 1;
+            let centerSlidePercentage = 30;
+
+            if (window.innerWidth < 600) {
+                numItemsToShow = 1;
+                centerSlidePercentage = 90;
+            } else if (window.innerWidth > 600 && window.innerWidth < 960) {
+                numItemsToShow = 2;
+                centerSlidePercentage = 45;
+            } else {
+                numItemsToShow = 3;
+                centerSlidePercentage = 35;
+            }
+
+            setCarouselSettings({
+                numItemsToShow,
+                centerSlidePercentage
+            });
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const { numItemsToShow, centerSlidePercentage } = carouselSettings;
 
     return (
         <Carousel
@@ -21,7 +58,9 @@ const CustomCarousel = ({ items }) => {
             dynamicHeight={false}
             emulateTouch={true}
             centerMode={true}
-            centerSlidePercentage={30}
+            centerSlidePercentage={centerSlidePercentage}
+            showIndicators={false}
+            show={numItemsToShow}
             renderArrowPrev={(onClickHandler, hasPrev, label) =>
                 hasPrev && (
                     <button type="button" onClick={onClickHandler} title={label} className="arrow arrow-prev">
