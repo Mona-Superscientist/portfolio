@@ -38,7 +38,7 @@
     display: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .arrow {
         font-size: 0.8rem;
         pad: 10px;

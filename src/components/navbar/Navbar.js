@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-scroll';
@@ -10,11 +10,12 @@ import './Navbar.css';
 const Navbar = () => {
     const { theme, toggleTheme } = useTheme();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isMobileView, setIsMobileView] = useState(false);
 
     useEffect(() => {
         const checkScreenWidth = () => {
-            setIsMobileView(window.innerWidth <= 960);
+            if (window.innerWidth <= 960) {
+                setIsMobileMenuOpen(false);
+            }
         };
 
         checkScreenWidth();
