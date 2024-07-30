@@ -1,10 +1,10 @@
 .experiences {
-    padding: 50px 20px;
+    padding: 5vh 2vw;
 }
 
 .experiences h1 {
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 3vh;
 }
 
 .experience-cards {
@@ -43,4 +43,11 @@
 .show-all-button:hover {
     background-color: white;
     color: #009FBD;
+}
+
+@media screen and (max-width:600px) {
+    .experience-card {
+        flex: 1 0 70%;
+        margin: 1vh;
+    }
 }

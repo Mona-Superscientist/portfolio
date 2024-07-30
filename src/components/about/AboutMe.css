@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px;
-    margin-top: 50px;
+    padding: 5vh 5vw;
+    margin-top: 5vh;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .about-me-content h1 {
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
 }
 
 .intro-wrapper {
@@ -29,7 +29,7 @@
 }
 
 .about-me-content .intro-statement {
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
     font-size: x-large;
 }
 
@@ -85,4 +85,28 @@
 .about-me-gif img {
     width: 100%;
     height: auto;
+}
+
+@media screen and (max-width: 960px) {
+    .about-me-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        width: 85%
+    }
+
+    .about-me-gif {
+        display: none;
+    }
+
+    .social-media-icons {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .social-media-icons .icon {
+        font-size: 2em;
+    }
 }

@@ -1,5 +1,5 @@
 .services {
-    padding: 50px 30px;
+    padding: 5vh 3vw;
     border-radius: 25px;
 }
 
@@ -17,8 +17,7 @@
 
 .services-heading p {
     text-align: center;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding: 0vh 2vw;
 }
 
 .services-list {
@@ -30,7 +29,7 @@
 .service-buttons  {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 2vh;
     gap:30px
 }
 
@@ -108,4 +107,24 @@
 
 .contact-us-fields{
     width: 400px;
+}
+
+@media screen and (max-width: 600px) {
+    .service-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh
+    }
+
+    .more-services-btn {
+        text-align: center;
+    }
+
+    .email-gif-placeholder {
+        display: none;
+    }
+
+    .contact-us-gif {
+       display: none;
+    }
 }

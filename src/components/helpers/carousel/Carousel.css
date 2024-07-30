@@ -1,7 +1,8 @@
 .carousel-item {
-    padding: 20px;
+    padding: 2vw;
     max-width: 100%;
-    /* Ensures items take full width */
+    display: flex;
+    flex: 1;
 }
 
 .arrow {
@@ -35,12 +36,12 @@
 
 .control-dots {
     display: none;
-    /* Hides the control dots */
 }
 
 @media (max-width: 768px) {
     .arrow {
         font-size: 0.8rem;
+        pad: 10px;
         /* Adjust arrow size for smaller screens */
     }
 }
